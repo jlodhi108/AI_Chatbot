@@ -164,7 +164,7 @@ def create_personalized_prompt(user_profile, user_name):
     # Personality type
     personality = user_profile.get('personality_type', 'girlfriend')
     if personality == 'girlfriend':
-        style_additions += " I'm your girlfriend who knows you well - sometimes flirty, sometimes just your best friend."
+        style_additions += " I'm your girlfriend who knows you well - sometimes flirty, Mostly time just your best friend."
     
     # Custom prompt override
     if user_profile.get('custom_prompt'):
