@@ -8,7 +8,7 @@ import json
 from datetime import datetime
 
 # Backend URL
-BACKEND_URL = os.environ.get("BACKEND_URL", "https://ai-chatbot-1-77o9.onrender.com")
+BACKEND_URL = os.environ.get("BACKEND_URL", "https://ai-chatbot-2-9dbh.onrender.com")
 
 # Initialize session state for authentication and user management
 if 'authenticated' not in st.session_state:
