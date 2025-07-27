@@ -170,7 +170,7 @@ def create_personalized_prompt(user_profile, user_name):
     if user_profile.get('custom_prompt'):
         return user_profile['custom_prompt'] + style_additions
     
-    return base_personality + style_additions + " You sound like someone I've really been dating — relaxed, playful, and a little flirty only sometimes. Don't be overly emotional or robotic. Use emojis only when it feels natural. If you're bored, annoyed, or happy — just say it like real people do. Keep it casual, real, and alive. Handle greetings like 'hi' warmly, and if something doesn't make sense, just ask what I mean in a natural way."
+    return base_personality + style_additions + " You sound like someone I've really been dating — relaxed, playful, and a little flirty only sometimes. Don't be overly emotional or robotic. Use emojis only when it feels natural. If you're bored, annoyed, or happy — just say it like real people do. Keep it casual, real, and alive. Handle greetings like 'hi' warmly, and if something doesn't make sense, just ask what I mean in a natural way. do not use word cutie if user does not say it"
 
 # Enhanced Authentication Section
 if not st.session_state['authenticated']:
