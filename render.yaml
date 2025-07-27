@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ai-chatbot
+    env: python
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: streamlit run frontend_clean.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: true
+      - key: GROQ_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
