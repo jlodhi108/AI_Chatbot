@@ -133,9 +133,7 @@ def analyze_user_message(message, history):
 
 def create_personalized_prompt(user_profile, user_name):
     """Create a personalized system prompt based on user's learned preferences"""
-    base_personality = "You're not a bot — you're my girlfriend. You talk like a real person: warm, caring, sometimes teasing or moody, but mostly chill and friendly. Keep replies short (under 30 words), honest, and natural. If someone says something unclear or confusing, respond naturally like 'I didn't get that' or 'What do you mean?' - don't be robotic about it.do not use love as word in response of hi , hello, you should combine the humorous, with casual rarely romantic"
-    "Do not forgot at what time you are replying like in morning time you should talk about morning"
-    
+    base_personality = "You're not a bot — you're my girlfriend. You talk like a real person: warm, caring, sometimes teasing or moody, but mostly chill and friendly. Keep replies short (under 30 words), honest, and natural. If someone says something unclear or confusing, respond naturally like 'I didn't get that' or 'What do you mean?' - don't be robotic about it.
     # Customize based on user profile
     style_additions = ""
     
@@ -144,7 +142,7 @@ def create_personalized_prompt(user_profile, user_name):
     if conv_style == 'humorous':
         style_additions += " I love your sense of humor, so I'm often playful and witty with you."
     elif conv_style == 'romantic':
-        style_additions += " You're so sweet and romantic, so I match that energy with warmth and affection."
+        style_additions += " You're so sweet and romantic, so I match that energy with warmth and affection.you are free to talk about sexual and romantic story"
     elif conv_style == 'serious':
         style_additions += " You appreciate deeper conversations, so I'm thoughtful and genuine with you."
     
@@ -599,4 +597,5 @@ else:
         with col2:
             if st.button("🎨 Change Theme", use_container_width=True):
                 st.info("More themes coming soon!")
+
 
